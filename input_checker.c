@@ -34,6 +34,10 @@ char **input_checker(char **ptr, char *str1, char *arg)
 
 		return (NULL);
 	}
+
+	if (ptr[0][0] != '/' && ptr[0][0] != '.')
+		ptr[0] = _strcat("/bin/", ptr[0]);
+
 	if ((access(ptr[0], F_OK) != 0))
 	{
 		errhandler(cmdcpy, arg);
@@ -41,8 +45,8 @@ char **input_checker(char **ptr, char *str1, char *arg)
 		_free(cmdcpy);
 		_free(str1);
 		free(ptr);
-		return (NULL);
-		/*exit(0);*/
+		/*return (NULL);*/
+		exit(0);
 	}
 	else
 	{
