@@ -11,9 +11,6 @@
 char **input_checker(char **ptr, char *str1, char *arg)
 {
 	char *cmdcpy = NULL;
-	/*char **dir = NULL;*/
-	/*char buff[256];*/
-	/*size_t buffsize = 0;*/
 
 	if (!ptr)
 	{
@@ -45,7 +42,6 @@ char **input_checker(char **ptr, char *str1, char *arg)
 		_free(cmdcpy);
 		_free(str1);
 		free(ptr);
-		/*return (NULL);*/
 		exit(0);
 	}
 	else
