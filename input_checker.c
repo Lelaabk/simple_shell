@@ -18,7 +18,7 @@ char **input_checker(char **ptr, char *str1, char *arg)
 		free(ptr);
 		_free(cmdcpy);
 		_free(str1);
-		return (NULL);
+		return (ptr);
 	}
 	cmdcpy = (char *)malloc((_strlen(ptr[0]) + 1) * sizeof(char));
 	_strcpy(ptr[0], cmdcpy);
