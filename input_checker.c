@@ -21,9 +21,7 @@ char **input_checker(char **ptr, char *str1, char *arg)
 		return (NULL);
 	}
 	cmdcpy = (char *)malloc((_strlen(ptr[0]) + 1) * sizeof(char));
-
 	_strcpy(ptr[0], cmdcpy);
-
 	if (_strcmp(ptr[0], "exit") == 0)
 	{
 		if (ptr[1] != NULL)
@@ -32,10 +30,8 @@ char **input_checker(char **ptr, char *str1, char *arg)
 		free(ptr);
 		_free(cmdcpy);
 		_free(str1);
-
 		return (NULL);
 	}
-
 	if (ptr[0][0] != '/' && ptr[0][0] != '.')
 		ptr[0] = _strcat("/bin/", ptr[0]);
 
