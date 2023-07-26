@@ -6,7 +6,7 @@
 	* Return: exit on failure.
 */
 
-void prompt(char *arg)
+void prompt(void)
 {
 	char *buff = NULL;
 	size_t buffsize = 0;
@@ -14,7 +14,6 @@ void prompt(char *arg)
 	int status = 0;
 	char **cmd;
 
-	printf("arg =%s ", arg);
 	for (;;)
 	{
 		printprompt("mega-team");

@@ -39,7 +39,7 @@ char *_strcat(char *a, char *b)
  *@input: input string.
  *Return: /bin/string
  */
-
+/*
 char *getpath(char *input)
 {
 	char *bin = "/bin/";
@@ -47,4 +47,4 @@ char *getpath(char *input)
 
 	output = _strcat(bin, input);
 	return (output);
-}
+}*/
