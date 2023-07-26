@@ -12,8 +12,12 @@ char **input_checker(char **ptr, char *str1, char *arg)
 {
 	char *cmdcpy = NULL;
 
-	if (!ptr)
+	if (ptr == NULL)
 	{
+		/*_free(ptr[0]);*/
+		free(ptr);
+		_free(cmdcpy);
+		_free(str1);
 		return (NULL);
 	}
 	cmdcpy = (char *)malloc((_strlen(ptr[0]) + 1) * sizeof(char));
