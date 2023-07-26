@@ -34,12 +34,12 @@ int _istoken(char input, char *delim);
 /*char *getpath(char *input);*/
 char *_strcat(char *a, char *src);
 int _strcpy(char *input, char *dest);
-char **input_checker(char **ptr, char *str1,char *arg);
+char **input_checker(char **ptr, char *str1, char *arg);
 void _putout(char *str);
 
 char **_reallocptr(char **ptr_o, int old_size, int new_size);
 char *_strncat(char *dest, const char *src);
 char *removecomments(char *input);
-void *_realloc(void *prev, int old, int new); 
+void *_realloc(void *prev, int old, int new);
 
 #endif

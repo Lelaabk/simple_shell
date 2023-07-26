@@ -2,7 +2,6 @@
 
 /**
 	* prompt - responsible for spawn prompt, respawn after each execution.
-	* @arg: input arg.
 	* Return: exit on failure.
 */
 

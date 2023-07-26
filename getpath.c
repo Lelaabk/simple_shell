@@ -33,18 +33,3 @@ char *_strcat(char *a, char *b)
 	_free(b);
 	return (output);
 }
-
-/**
- *getpath - adding /bin
- *@input: input string.
- *Return: /bin/string
- */
-/*
-char *getpath(char *input)
-{
-	char *bin = "/bin/";
-	char *output = NULL;
-
-	output = _strcat(bin, input);
-	return (output);
-}*/
