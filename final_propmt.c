@@ -35,7 +35,7 @@ void prompt(char *arg)
 		{
 			wait(&status);
 			_freeptr(cmd);
-			_free(buff);
+			/*_free(buff);*/
 		}
 	}
 }
